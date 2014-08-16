@@ -7,7 +7,7 @@
 
 module.exports = function(grunt) {
   'use strict';
-  grunt.config('browsersync', {
+  grunt.config('browserSync', {
     files: {
       src: [
         '<%= gruntScope.distMainCssFile %>',
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     options: {
       watchTask: true,
       server: {
-        baseDir: '<%= gruntScope.distPath %>'
+        baseDir: 'dist/'
       }
     }
   });

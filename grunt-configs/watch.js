@@ -13,6 +13,7 @@ module.exports = function(grunt) {
 				'<%= gruntScope.srcHtmlFiles %>'
 			],
 			tasks: [
+				'htmlmin'
 			]
 		},
 		sass: {
@@ -30,7 +31,8 @@ module.exports = function(grunt) {
 				'<%= gruntScope.srcJsFiles %>'
 			],
 			tasks: [
-				'jshint', 'uglify:dist'
+				'jshint',
+				'uglify:dist'
 			]
 		}
 	});
