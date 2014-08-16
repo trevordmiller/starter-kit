@@ -9,8 +9,8 @@ module.exports = function(grunt) {
 	'use strict';
 	grunt.config('jshint', {
 		src: [
-			'<%= gruntScope.gruntScope.srcJsFiles %>',
-			'<%= gruntScope.gruntScope.gruntConfigFiles %>'
+			'<%= gruntScope.srcJsFiles %>',
+			'<%= gruntScope.gruntConfigFiles %>'
 		],
 		options: {
 			jshintrc: '.jshintrc',

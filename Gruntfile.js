@@ -25,7 +25,6 @@ module.exports = function(grunt) {
 
 	// -------------------------------------------------
 	// SHARED VARIABLES
-	// Passed to "grunt-configs" through "options" object.
 	// -------------------------------------------------
 
 	var gruntScope = {
@@ -62,7 +61,7 @@ module.exports = function(grunt) {
 	// Load per-task configs from seperate files.
 	// -------------------------------------------------
 
-  grunt.loadTasks('<%= gruntScope.gruntConfigsPath %>');
+	grunt.loadTasks('<%= gruntScope.gruntConfigsPath %>');
 
 
 
