@@ -5,17 +5,20 @@
 // https://github.com/nDmitry/grunt-autoprefixer
 // -------------------------------------------------------------------------------
 
-module.exports = {
-	dist: {
-		src: [
-			'<%= distMainCssFile %>'
-		]
-	},
-	options: {
+module.exports = function(grunt) {
+	'use strict';
+	grunt.config('autoprefixer', {
+		dist: {
+			src: [
+				'<%= gruntScope.distMainCssFile %>'
+			]
+		},
+		options: {
 
-		// Portfolio level standard for browser support
-		browsers: [
-			'last 2 versions'
-		]
-	}
+			// Portfolio level standard for browser support
+			browsers: [
+				'last 2 versions'
+			]
+		}
+	});
 };

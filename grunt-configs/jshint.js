@@ -5,13 +5,16 @@
 // https://github.com/gruntjs/grunt-contrib-jshint
 // -------------------------------------------------------------------------------
 
-module.exports = {
-	src: [
-		'<%= srcJsFiles %>',
-		'<%= gruntConfigFiles %>'
-	],
-	options: {
-		jshintrc: '.jshintrc',
-		reporter: require('jshint-stylish')
-	}
+module.exports = function(grunt) {
+	'use strict';
+	grunt.config('jshint', {
+		src: [
+			'<%= gruntScope.gruntScope.srcJsFiles %>',
+			'<%= gruntScope.gruntScope.gruntConfigFiles %>'
+		],
+		options: {
+			jshintrc: '.jshintrc',
+			reporter: require('jshint-stylish')
+		}
+	});
 };

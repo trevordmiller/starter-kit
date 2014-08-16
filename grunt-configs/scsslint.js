@@ -5,11 +5,14 @@
 // https://github.com/ahmednuaman/grunt-scss-lint
 // -------------------------------------------------------------------------------
 
-module.exports = {
-	files: [
-	'<%= srcSassFiles %>'
-	],
-	options: {
-		config: '.scss-lint.yml'
-	}
+module.exports = function(grunt) {
+	'use strict';
+	grunt.config('scsslint', {
+		files: [
+			'<%= gruntScope.srcSassFiles %>'
+		],
+		options: {
+			config: '.scss-lint.yml'
+		}
+	});
 };
