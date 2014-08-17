@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 	grunt.config('jshint', {
 		src: [
 			'<%= gruntScope.srcJsFiles %>',
-			'<%= gruntScope.gruntConfigFiles %>'
+			'<%= gruntScope.gruntConfigJsFiles %>'
 		],
 		options: {
 			jshintrc: '.jshintrc',

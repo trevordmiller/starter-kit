@@ -10,8 +10,9 @@ module.exports = function(grunt) {
   grunt.config('browserSync', {
     files: {
       src: [
+        '<%= gruntScope.distHtmlFiles %>',
         '<%= gruntScope.distMainCssFile %>',
-        '<%= gruntScope.distHtmlFiles %>'
+        '<%= gruntScope.srcJsFiles %>'
       ]
     },
     options: {
