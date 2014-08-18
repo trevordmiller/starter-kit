@@ -1,9 +1,9 @@
-// -------------------------------------------------------------------------------
+// ================================================================================
 // GRUNT CONFIG: WATCH
-// grunt-contrib-watch
 // Continuously watches and live reloads with file changes.
+// grunt-contrib-watch
 // https://github.com/gruntjs/grunt-contrib-watch
-// -------------------------------------------------------------------------------
+// ================================================================================
 
 module.exports = function(grunt) {
 	'use strict';
@@ -13,7 +13,8 @@ module.exports = function(grunt) {
 				'<%= gruntScope.srcHtmlFiles %>'
 			],
 			tasks: [
-				'htmlmin'
+				'htmlmin',
+				'usebanner'
 			]
 		},
 		sass: {

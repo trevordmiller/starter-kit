@@ -1,9 +1,9 @@
-# --------------------------------------------------------------
+# ================================================================================
 # SCSSLINT CONFIG
-# Sass linting standards.
+# Linting for Sass standards.
 # https://github.com/causes/scss-lint
 # https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md
-# --------------------------------------------------------------
+# ================================================================================
 
 linters:
   BorderZero:

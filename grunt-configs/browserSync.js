@@ -1,9 +1,9 @@
-// -------------------------------------------------------------------------------
+// ================================================================================
 // GRUNT CONFIG: BROWSERSYNC
+// Starts a server, then live injects file changes into all instances of the server.
 // grunt-browser-sync
-// Creates a server, then live reloads and injects file changes into all instances of the server.
 // http://www.browsersync.io/docs/grunt/
-// -------------------------------------------------------------------------------
+// ================================================================================
 
 module.exports = function(grunt) {
   'use strict';

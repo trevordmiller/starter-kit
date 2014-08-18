@@ -1,27 +1,31 @@
 // ================================================================================
-// PROJECT LEVEL: SASS
-// Only contains Sass shared across the project.
-// Imports all other Sass files (partials).
+// COMPONENT LEVEL: SASS
+// Only contains Sass for this component.
 // ================================================================================
 
 
 
 // ------------------------------------------------------------------------------
-// PROJECT LEVEL: VARIABLES
-// Only contains variables shared across Sass files.
+// COMPONENT LEVEL: VARIABLES
+// Only contains variables for this component.
 // ------------------------------------------------------------------------------
 
-h1 {
-	color: #696969;
-	align-items: center;
+
+
+// ------------------------------------------------------------------------------
+// COMPONENT LEVEL: BEM BLOCK
+// ------------------------------------------------------------------------------
+.sidebar {
+
+	// ELEMENTS
+	&__element {
+		// Test
+		color: #000;
+	}
+
+	// MODIFIERS
+	&--modifier {
+		// Test
+		color: #000;
+	}
 }
-
-
-
-// ------------------------------------------------------------------------------
-// IMPORTS
-// Import all Sass partials using Sass globbing.
-// https://github.com/chriseppstein/sass-globbing
-// ------------------------------------------------------------------------------
-
-@import 'components/**/*';

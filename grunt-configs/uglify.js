@@ -1,9 +1,9 @@
-// -------------------------------------------------------------------------------
+// ================================================================================
 // GRUNT CONFIG: UGLIFY
-// grunt-contrib-uglify
 // Concatenates and minifies JavaScript files.
+// grunt-contrib-uglify
 // https://github.com/gruntjs/grunt-contrib-uglify
-// -------------------------------------------------------------------------------
+// ================================================================================
 
 module.exports = function(grunt) {
 	'use strict';

@@ -1,8 +1,9 @@
 # Project Name
 [project url](project url)
+project description.
 
 ---
 
-## Description
+## Project Notes
 
-project description
+project notes.

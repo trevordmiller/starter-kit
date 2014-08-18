@@ -1,9 +1,9 @@
-// -------------------------------------------------------------------------------
+// ================================================================================
 // GRUNT CONFIG: AUTOPREFIXER
+// Auto add vendor prefixes for browser support using the 'caniuse.com' database.
 // grunt-autoprefixer
-// Automatically adds vendor prefixes for required browser support using the 'Can I Use' database.
 // https://github.com/nDmitry/grunt-autoprefixer
-// -------------------------------------------------------------------------------
+// ================================================================================
 
 module.exports = function(grunt) {
 	'use strict';
