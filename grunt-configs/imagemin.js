@@ -7,16 +7,15 @@
 
 module.exports = function(grunt) {
 	'use strict';
-	grunt.config('usebanner', {
-		files: {
-			src: [
-				'<%= gruntScope.distHtmlFiles %>',
-			]
-		},
+	grunt.config('imagemin', {
 		options: {
-			position: 'top',
-			banner: '<!--\n<%= gruntScope.commentBanner %>-->\n',
-			linebreak: true
-		}
+			optimizationLevel: 3
+		},
+		files: [{
+			expand: true,
+			cwd: 'src/',
+			src: ['images/**/*.{png,jpg,gif,svg}'],
+			dest: 'dist/'
+		}]
 	});
 };

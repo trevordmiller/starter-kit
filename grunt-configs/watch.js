@@ -35,6 +35,14 @@ module.exports = function(grunt) {
 				'jshint',
 				'uglify:dist'
 			]
+		},
+		images: {
+			files: [
+				'<%= gruntScope.srcImageFiles %>'
+			],
+			tasks: [
+			 'imagemin'
+			]
 		}
 	});
 };

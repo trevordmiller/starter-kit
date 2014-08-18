@@ -46,6 +46,11 @@ module.exports = function(grunt) {
 			'Gruntfile.js',
 			'grunt-configs/*.js'
 		],
+
+		// IMAGES
+		srcImageFiles: [
+			'src/images/**/*.{png,jpg,gif,svg}'
+		]
 	};
 
 
@@ -83,12 +88,13 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		'clean',
 		'htmlmin',
+		'usebanner',
 		'scsslint',
 		'sass:dist',
 		'autoprefixer',
 		'jshint',
 		'uglify:dist',
-		'usebanner'
+		'imagemin'
 	]);
 
 	// SERVE
