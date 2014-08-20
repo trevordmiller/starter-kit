@@ -15,17 +15,17 @@
 // ------------------------------------------------------------------------------
 // COMPONENT LEVEL: BEM BLOCK
 // ------------------------------------------------------------------------------
-.sidebar {
+.example-component {
 
 	// ELEMENTS
 	&__element {
 		// Test
-		color: #000;
+		padding: $padding--base;
 	}
 
 	// MODIFIERS
 	&--modifier {
 		// Test
-		color: #000;
+		color: $color--primary;
 	}
 }

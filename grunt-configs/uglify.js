@@ -12,24 +12,28 @@ module.exports = function(grunt) {
 		// While watch is running, uglify JS completely to optimize file loading
 		dist: {
 			files: {
-				'<%= gruntScope.distMainJsFile %>': '<%= gruntScope.srcJsFiles %>'
+				'<%= gruntScope.distMainJsFile %>': [
+					'<%= gruntScope.srcJsFiles %>'
+				]
 			},
 			options: {
-				banner: '<%= gruntScope.commentBanner %>'
+				banner: '<%= gruntScope.commentBanner %>\n\n'
 			}
 		},
 
 		// If 'grunt debug' is used, don't uglify JS completely - just concatenate
 		debug: {
 			files: {
-				'<%= gruntScope.distMainJsFile %>': '<%= gruntScope.srcJsFiles %>'
+				'<%= gruntScope.distMainJsFile %>': [
+					'<%= gruntScope.srcJsFiles %>'
+				]
 			},
 			options: {
 				mangle: false,
 				beautify: true,
 				compress: false,
 				preserveComments: true,
-				banner: '<%= gruntScope.commentBanner %>'
+				banner: '<%= gruntScope.commentBanner %>\n\n'
 			}
 		}
 	});

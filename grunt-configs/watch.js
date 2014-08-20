@@ -41,7 +41,6 @@ module.exports = function(grunt) {
 				'<%= gruntScope.srcImageFiles %>'
 			],
 			tasks: [
-			 'imagemin'
 			]
 		}
 	});

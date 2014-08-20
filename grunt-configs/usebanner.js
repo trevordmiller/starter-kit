@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 		},
 		options: {
 			position: 'top',
-			banner: '<!--\n<%= gruntScope.commentBanner %>-->\n',
+			banner: '<!--\n<%= gruntScope.commentBanner %>-->\n\n',
 			linebreak: true
 		}
 	});

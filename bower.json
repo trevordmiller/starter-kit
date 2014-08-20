@@ -1,0 +1,7 @@
+{
+  "name": "project-name",
+  "private": true,
+  "devDependencies": {
+    "handlebars": "~1.3.0"
+  }
+}

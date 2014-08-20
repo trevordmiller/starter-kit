@@ -5,5 +5,5 @@
 
 (function() {
 	'use strict';
-	console.log('Hello world!');
+	console.log('Hi there! I\'m an example...');
 })();

@@ -11,16 +11,45 @@
 // Only contains variables shared across Sass files.
 // ------------------------------------------------------------------------------
 
-h1 {
-	color: #696969;
-	align-items: center;
+// COLORS
+$color--primary: #000;
+$color--fill: #fff;
+
+// SPACING
+$margin--base: 1rem;
+$margin--small: ($margin--base / 2);
+$margin--medium: ($margin--base * 2);
+$margin--large: ($margin--base * 3);
+$padding--base: 1rem;
+$padding--small: ($padding--base / 2);
+$padding--medium: ($padding--base * 2);
+$padding--large: ($padding--base * 3);
+
+// TYPOGRAPHY
+$font-family--primary: sans;
+$font-size--base: 1rem;
+$margin--small: .7rem;
+$margin--medium: 1.4rem;
+$margin--large: 2.6rem;
+$line-height--base: 1.3;
+
+// ANIMATIONS
+$transition-speed--base: .3s;
+
+%transition--base {
+	transition: all $transition-speed--base;
 }
 
+
+h1 {
+	color: #999;
+}
 
 
 // ------------------------------------------------------------------------------
 // IMPORTS
 // Import all Sass partials using Sass globbing.
+// Currently requires version 1.1.0.
 // https://github.com/chriseppstein/sass-globbing
 // ------------------------------------------------------------------------------
 

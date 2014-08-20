@@ -12,7 +12,7 @@ module.exports = function(grunt) {
       src: [
         '<%= gruntScope.distHtmlFiles %>',
         '<%= gruntScope.distMainCssFile %>',
-        '<%= gruntScope.srcJsFiles %>'
+        '<%= gruntScope.distMainJsFile %>'
       ]
     },
     options: {
