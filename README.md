@@ -1,9 +1,1 @@
-# Project Name
-[project url](project url)
-project description.
-
----
-
-## Project Notes
-
-project notes.
+Deprecated and moved to the [GitHub Pages Starter Kit](https://github.com/trevordmiller/github-pages-starter-kit)
